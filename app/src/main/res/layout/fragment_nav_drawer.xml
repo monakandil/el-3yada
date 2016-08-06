@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/icons"
+    android:orientation="vertical"
+    tools:context="com.taekung.nady.el_3yada.NavDrawerFrag">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_layout"
+        android:background="@color/primary"
+        android:orientation="vertical">
+
+        <!-- TODO: Update blank fragment layout -->
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/navbg5"
+            android:id="@+id/imageView" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/nav_profile_image"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/profile"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FFF"
+            app:civ_fill_color="@color/icons"
+            android:layout_marginEnd="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="35dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="nady80878@gmail.com"
+            android:id="@+id/nav_email_vtxt"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/nav_profile_image"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="51dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textColorHighlight="#f2eded"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="nady shalaby"
+            android:id="@+id/nav_name_vtxt"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignLeft="@+id/nav_email_vtxt"
+            android:layout_alignStart="@+id/nav_email_vtxt"
+            android:layout_marginBottom="20dp"
+            android:textColor="#ffffff"
+            android:textColorHighlight="#f2eded"/>
+    </RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nav_draw_list"
+        android:layout_below="@+id/banner_layout" />
+</RelativeLayout>

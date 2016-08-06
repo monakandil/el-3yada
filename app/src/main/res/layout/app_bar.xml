@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:theme="@style/AppTheme.Navbar"
+    android1:layout_height="wrap_content"
+    android1:layout_width="match_parent"
+    android1:background="@color/primary"
+    android1:paddingTop="@dimen/app_bar_padding_top">
+
+</android.support.v7.widget.Toolbar>

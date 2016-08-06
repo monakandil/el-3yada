@@ -1,0 +1,137 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/patient_background"
+        tools:context="com.taekung.nady.el_3yada.PatientFrag">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/patient_name_icon"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:id="@+id/patient_name_txt"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="41dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            style="@style/EditTextStyle"
+            android:textColor="@color/icons"
+            android:hint="Name" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/patient_email_icon"
+            android:textColor="@color/icons"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content"
+            android:id="@+id/patient_email_txt"
+            android:layout_below="@+id/patient_name_txt"
+            android:layout_centerHorizontal="true"
+            style="@style/EditTextStyle"
+            android:hint="Email" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/patient_tel_icon"
+            android:inputType="phone"
+            android:id="@+id/patient_tel_txt"
+            android:layout_below="@+id/patient_email_txt"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/icons"
+            style="@style/EditTextStyle"
+            android:hint="Telephone" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:drawableLeft="@drawable/patient_disease_icon"
+            android:id="@+id/patient_disease_txt"
+            android:textColor="@color/icons"
+            android:layout_below="@+id/patient_tel_txt"
+            android:layout_centerHorizontal="true"
+            style="@style/EditTextStyle"
+            android:hint="Disease" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:cursorVisible="false"
+            android:drawableLeft="@drawable/patient_medication_icon"
+            android:id="@+id/patient_medication_txt"
+            android:textColor="@color/icons"
+            android:layout_below="@+id/patient_disease_txt"
+            android:layout_centerHorizontal="true"
+            style="@style/EditTextStyle"
+            android:hint="Medication" />
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:drawableLeft="@drawable/patient_date_icon"
+            android:ems="10"
+            android:id="@+id/patient_date_txt"
+            style="@style/TextViewStyle"
+            android:textColor="@color/icons"
+            android:layout_below="@+id/patient_medication_txt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="Date" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/icons"
+            android:editable="false"
+            android:drawableLeft="@drawable/patient_time_icon"
+            android:inputType="time"
+            android:ems="10"
+            android:id="@+id/patient_time_txt"
+            style="@style/TextViewStyle"
+            android:layout_below="@+id/patient_medication_txt"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/patient_date_txt"
+            android:layout_toRightOf="@+id/patient_date_txt"
+            android:hint="Time" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/patient_cost_icon"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/patient_cost_txt"
+            android:textColor="@color/icons"
+            style="@style/EditTextStyle"
+            android:layout_below="@+id/patient_date_txt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="Cost" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create"
+            android:id="@+id/patient_create_btn"
+            style="@style/ButtonStyle"
+            android:layout_below="@+id/patient_cost_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp" />
+    </RelativeLayout>
+</ScrollView>

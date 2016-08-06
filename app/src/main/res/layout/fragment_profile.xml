@@ -1,0 +1,119 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg1"
+        tools:context="com.taekung.nady.el_3yada.ProfileFrag">
+
+        <!-- TODO: Update blank fragment layout -->
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            android:background="@drawable/navbg5">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/nav_profile_image"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/profile"
+                app:civ_border_color="#FFF"
+                app:civ_border_width="2dp"
+                app:civ_fill_color="@color/icons" />
+
+            <TextView
+                android:id="@+id/email_vtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:text="nady80878@gmail.com"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textColorHighlight="#f2eded"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/name_vtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/email_vtxt"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/email_vtxt"
+                android:layout_marginBottom="15dp"
+                android:text="nady shalaby"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff"
+                android:textColorHighlight="#f2eded"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/profile_email_txt"
+            style="@style/EditTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_below="@+id/profile_name_txt"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/email_icon"
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/profile_name_txt"
+            style="@style/EditTextStyle"
+            android:inputType="textPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/name_icon"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/profile_password_txt"
+            style="@style/EditTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_email_txt"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/login_password"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/profile_update_btn"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/profile_password_txt"
+            android:layout_marginTop="50dp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/show_hide_password"
+            android:layout_below="@+id/profile_password_txt"
+            android:layout_centerHorizontal="true"
+            android:checked="false" />
+
+    </RelativeLayout>
+</ScrollView>
